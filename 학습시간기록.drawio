@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.1.0">
   <diagram id="qbKrsGtOIAX3DCvR9-m-" name="페이지-1">
-    <mxGraphModel dx="1388" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2280" dy="1269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,22 +14,40 @@
           <mxGeometry height="25" width="140" y="120" as="geometry" />
         </mxCell>
         <mxCell id="FA2vzdkcWgiAUovbKZaj-35" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="TimerController&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Control&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="190" x="730" y="120" as="geometry" />
+          <mxGeometry height="160" width="190" x="730" y="120" as="geometry" />
         </mxCell>
         <mxCell id="FA2vzdkcWgiAUovbKZaj-36" parent="FA2vzdkcWgiAUovbKZaj-35" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" value="- currentSystemTime : DateTime&lt;div&gt;- isRunning : Boolean&lt;/div&gt;" vertex="1">
           <mxGeometry height="61" width="190" y="40" as="geometry" />
         </mxCell>
         <mxCell id="FA2vzdkcWgiAUovbKZaj-37" parent="FA2vzdkcWgiAUovbKZaj-35" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" value="+ startTimer() : void&lt;div&gt;+ stopTimer() : StudyRecord&lt;/div&gt;&lt;div&gt;+ updateTime() : Time&lt;/div&gt;" vertex="1">
-          <mxGeometry height="49" width="190" y="101" as="geometry" />
+          <mxGeometry height="59" width="190" y="101" as="geometry" />
         </mxCell>
-        <mxCell id="FA2vzdkcWgiAUovbKZaj-38" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="RecordManager&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Control&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="290" x="1040" y="120" as="geometry" />
+        <mxCell id="FA2vzdkcWgiAUovbKZaj-38" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" value="RecordManager&lt;div&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Control&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="290" x="1040" y="120" as="geometry" />
         </mxCell>
         <mxCell id="FA2vzdkcWgiAUovbKZaj-39" parent="FA2vzdkcWgiAUovbKZaj-38" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" value="-" vertex="1">
-          <mxGeometry height="25" width="290" y="29" as="geometry" />
+          <mxGeometry height="21" width="290" y="40" as="geometry" />
         </mxCell>
         <mxCell id="FA2vzdkcWgiAUovbKZaj-40" parent="FA2vzdkcWgiAUovbKZaj-38" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" value="+ savedRecord(record : StudyRecord) : Boolean&lt;div&gt;+ getRecord(userId : String) : List&amp;lt;StudyRecord&amp;gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="46" width="290" y="54" as="geometry" />
+          <mxGeometry height="59" width="290" y="61" as="geometry" />
+        </mxCell>
+        <mxCell id="SAKdD7Yhr5nSW-s1ZoH8-1" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="920" y="140" as="sourcePoint" />
+            <mxPoint x="1040" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SAKdD7Yhr5nSW-s1ZoH8-4" edge="1" parent="1" source="FA2vzdkcWgiAUovbKZaj-35" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1.004;exitY=0.129;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FA2vzdkcWgiAUovbKZaj-32" value="Use">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="890" y="220" as="sourcePoint" />
+            <mxPoint x="1050" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SAKdD7Yhr5nSW-s1ZoH8-6" edge="1" parent="1" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FA2vzdkcWgiAUovbKZaj-32" value="Use">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1040" y="140" as="sourcePoint" />
+            <mxPoint x="1069" y="469" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
